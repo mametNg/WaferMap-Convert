@@ -24,5 +24,14 @@ Wafermap convert is the process of translating wafermap data (position of good/d
 
 ## App Preview
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Display](https://raw.githubusercontent.com/mametNg/WaferMap-Convert/refs/heads/main/assets/img/preview/example1.png)
+
+![App Display](https://raw.githubusercontent.com/mametNg/WaferMap-Convert/refs/heads/main/assets/img/preview/example2.png)
+
+![App Display](https://raw.githubusercontent.com/mametNg/WaferMap-Convert/refs/heads/main/assets/img/preview/example3.png)
+
+![App Display](https://raw.githubusercontent.com/mametNg/WaferMap-Convert/refs/heads/main/assets/img/preview/example4.png)
+
+![App Display](https://raw.githubusercontent.com/mametNg/WaferMap-Convert/refs/heads/main/assets/img/preview/example5.png)
+
 
