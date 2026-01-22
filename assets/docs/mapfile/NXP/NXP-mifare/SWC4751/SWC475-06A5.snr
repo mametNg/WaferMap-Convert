@@ -1,0 +1,8 @@
+                      **** SERIAL NUMBER SUMMARY DATA ****
+----------------------------------------------------------------------------------------
+Diffusion Lot  SWC475.1
+----------------------------------------------------------------------------------------
+
+Wafer-No.   Tester    Good Dies  ------- SNR First -------     ------- SNR Last --------    ------ Date ------    -Bunch- -Assigned-    -- Last Programmed SNR --    ---- SNR DLL Name / Version ----    ------ SNR1 Account Name -------    --------- Product Name ---------    ----------- Batch Nr. ----------    - testcenter vers.-    - snr_sapdb vers. -
+
+     6     APBTD52      17559     0x086D9E52 =   141401682      0x086D9E52 =   141401682    06/23/22  06:28:26          1          1     0x086D9E52 =   141401682                    mif7byteV1 1.0.0                              MF1_72                TMF1SP6001UD/0C02AFL                        N0PB25D41000                1.1.0.0            1.0.2.19600

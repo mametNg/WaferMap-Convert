@@ -1,0 +1,46 @@
+EXPORT
+===================================================================================
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools > qc_tools.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools addons > addons.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools db_departement > db_departement.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools db_groups > db_groups.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools db_users_admin > db_users_admin.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools header > header.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools history_login > history_login.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools history_user > history_user.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools inspect_outgoing > inspect_outgoing.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools table_access_menu > table_access_menu.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools table_menu > table_menu.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools table_submenu > table_submenu.sql
+mysqldump -h 10.83.41.127 -u isd -pisd25108 qc_tools users_role > users_role.sql
+
+CONVERT
+===================================================================================
+iconv -f UTF-16 -t UTF-8 -o convert/qc_tools.sql qc_tools.sql
+iconv -f UTF-16 -t UTF-8 -o convert/addons.sql addons.sql
+iconv -f UTF-16 -t UTF-8 -o convert/db_departement.sql db_departement.sql
+iconv -f UTF-16 -t UTF-8 -o convert/db_groups.sql db_groups.sql
+iconv -f UTF-16 -t UTF-8 -o convert/db_users_admin.sql db_users_admin.sql
+iconv -f UTF-16 -t UTF-8 -o convert/header.sql header.sql
+iconv -f UTF-16 -t UTF-8 -o convert/history_login.sql history_login.sql
+iconv -f UTF-16 -t UTF-8 -o convert/history_user.sql history_user.sql
+iconv -f UTF-16 -t UTF-8 -o convert/inspect_outgoing.sql inspect_outgoing.sql
+iconv -f UTF-16 -t UTF-8 -o convert/table_access_menu.sql table_access_menu.sql
+iconv -f UTF-16 -t UTF-8 -o convert/table_menu.sql table_menu.sql
+iconv -f UTF-16 -t UTF-8 -o convert/table_submenu.sql table_submenu.sql
+iconv -f UTF-16 -t UTF-8 -o convert/users_role.sql users_role.sql
+
+IMPORT
+===================================================================================
+mysql -h localhost -u isd -pisd25108 qc_tools < addons.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < db_departement.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < db_groups.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < db_users_admin.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < header.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < history_login.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < history_user.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < inspect_outgoing.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < table_access_menu.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < table_menu.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < table_submenu.sql
+mysql -h localhost -u isd -pisd25108 qc_tools < users_role.sql
